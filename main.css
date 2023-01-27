@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    height: 1024px;
+    background-image: url("image/main-back.jpg");
+}
+
+.container {
+    margin-left: 121px;
+    margin-right: 121px;
+    height: 500px;
+}
+
+.top_nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.top_nav ul li {
+    display: inline-block;
+}
+
+.top_nav ul li a {
+    display: block;
+    padding: 20px 10px;
+    color: black;
+    text-decoration: none;
+
+}
