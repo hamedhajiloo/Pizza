@@ -2,20 +2,18 @@
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
 }
 
 body {
-    height: 1024px;
+    width: 100%;
     background-image: url("image/main-back.jpg");
-    height: 500px;
     font-family: 'Playfair Display';
     font-size: 22px;
 }
 
 .container {
-    margin-left: 121px;
-    margin-right: 121px;
-    background-color: beige;
+    margin: 0 121px;
 }
 
 .top_nav {
@@ -25,8 +23,12 @@ body {
     justify-content: center;
 }
 
+.top_nav ul {
+    display: flex;
+}
+
 .top_nav ul li {
-    display: inline-block;
+    list-style-type: none;
 }
 
 .top_nav ul li a {
@@ -34,5 +36,120 @@ body {
     padding: 20px 10px;
     color: black;
     text-decoration: none;
+}
 
+.main {
+    margin-top: 35px;
+    display: flex;
+}
+
+.pizza-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    /*TODO: remove width and height*/
+
+    width: 876px;
+    height: 1000px;
+
+}
+
+.pizza-list article {
+    width: 276px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+
+
+.pizza-list article img {
+    height: 124px;
+    height: 124px;
+    position: absolute;
+    left: 76px;
+    z-index: 2;
+}
+
+.pizza-list article section {
+    height: 328px;
+    background-color: white;
+    border-radius: 16px;
+    width: 100%;
+    margin-top: 62px;
+}
+
+.order {
+    background-color: white;
+    height: 535px;
+    width: 300px;
+    width: 276px;
+    margin-left: 24px;
+    margin-top: 62px;
+    border-radius: 16px;
+}
+
+.order section {
+    padding: 24px 16px;
+}
+
+.order header {
+    width: 83px;
+    height: 23px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+
+    /* Main Black */
+
+    color: #2D2D2D;
+
+
+}
+
+.f1 {
+    position: absolute;
+    width: 230px;
+    height: 250px;
+    left: -5.93px;
+    top: 144px;
+    background: url(image/f1.png);
+    transform: rotate(-5.9deg);
+    z-index: -1;
+}
+
+.f2 {
+
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 1060px;
+    top: 100px;
+    background: url(image/f2.png);
+    z-index: -1;
+
+}
+
+.f3 {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    left: 1060px;
+
+    top: 800px;
+    background: url(image/f3.png);
+    z-index: -1;
+}
+
+.f6 {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    left: -5.93px;
+    top: 580px;
+    background: url(image/f6.png);
+    z-index: -1;
 }
