@@ -14,6 +14,7 @@ body {
 
 .container {
     margin: 0 121px;
+    width: 1200px;
 }
 
 .top_nav {
@@ -47,11 +48,6 @@ body {
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
-    /*TODO: remove width and height*/
-
-    width: 876px;
-    height: 1000px;
-
 }
 
 .pizza-list article {
@@ -60,8 +56,70 @@ body {
     box-sizing: border-box;
 }
 
+.pizza-list article section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
 
 
+.pizza-list article section>div {
+    position: absolute;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto';
+
+}
+
+.pizza-list article section>div>* {
+    margin-top: 16px;
+}
+
+.pizza-type-selection {
+    border-top: 1px #DFDFDF solid;
+    border-bottom: 1px #DFDFDF solid;
+    padding: 16px 0;
+
+}
+
+.pizza-type-selection button {
+    width: 116px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.pizza-type-selection button:nth-child(1) {
+    background-color: black;
+    color: white;
+
+}
+
+.pizza-type-selection button:nth-child(2) {
+    background-color: white;
+    color: black;
+    border: 1px #DFDFDF solid;
+}
+
+
+.pizza-list article section header {
+    font-family: 'Roboto';
+    font-weight: bold;
+
+}
+
+.pizza-list article section p {
+    font-family: 'Roboto';
+    font-size: 13px;
+    line-height: 19px;
+    text-align: center;
+    max-width: 192px;
+}
 
 .pizza-list article img {
     height: 124px;
@@ -72,12 +130,36 @@ body {
 }
 
 .pizza-list article section {
-    height: 328px;
+    height: 340px;
     background-color: white;
     border-radius: 16px;
     width: 100%;
     margin-top: 62px;
 }
+
+.pizza-list footer {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.add-to-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    color: red;
+    border: 1px red solid;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Roboto';
+    cursor: pointer;
+}
+
+
 
 .order {
     background-color: white;
