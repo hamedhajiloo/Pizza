@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza</title>
     <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
 
@@ -240,11 +244,44 @@
             </section>
 
             <aside class="order">
-                <section>
-                    <header>
-                        My Order
-                    </header>
-                </section>
+                <header>
+                    My Order
+                </header>
+                <div class="order-item">
+                    <span>+</span>
+                    <img class="order-img" src="image/pizza.png" alt="" srcset="">
+                    <div class="order-title">Hawaiian Pizza</div>
+                    <div class="order-price">$18.00</div>
+                </div>
+                <div class="order-item">
+                    <span>+</span>
+                    <img class="order-img" src="image/pizza.png" alt="" srcset="">
+                    <div class="order-title">Hawaiian Pizza</div>
+                    <div class="order-price">$18.00</div>
+                </div>
+                <div class="line"></div>
+                <div class="price-box">
+                    <div class="sub-price">
+                        <div>Subtotal</div>
+                        <div>$1.00</div>
+                    </div>
+                    <div class="sub-price">
+                        <div>E-Vat</div>
+                        <div>$0.99</div>
+                    </div>
+                    <div class="sub-price">
+                        <div>Delivery Fee (Free for over $15.00)</div>
+                        <div>$0.00</div>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="total-price">
+                    <div>Total</div>
+                    <div>$37.99</div>
+                </div>
+                <div class="order-button">
+                    <button>Place Order</button>
+                </div>
             </aside>
         </section>
 
