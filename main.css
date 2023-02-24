@@ -28,6 +28,41 @@ body {
     display: flex;
     justify-content: center;
     z-index: 10;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.delivery-link>a>span {
+    display: block;
+    position: relative;
+}
+
+.delivery-link>a>span:nth-child(1)>span:nth-child(1) {
+    color: #DA1315;
+}
+
+.delivery-link>a>span:nth-child(1)>img {
+    position: absolute;
+    left: -12px;
+    top: -6px;
+}
+
+.mycart-count {
+    padding: 4px;
+    border-radius: 6px;
+    background: #DA1315;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+
 }
 
 .top_nav ul {
